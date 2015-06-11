@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +15,76 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsO-Hl-EAB">
+                                <rect key="frame" x="207" y="122" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziU-J4-oLu">
+                                <rect key="frame" x="207" y="181" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adress" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bka-BQ-UHg">
+                                <rect key="frame" x="207" y="239" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Latitude value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msv-Ws-4jn">
+                                <rect key="frame" x="329" y="122" width="108" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8w-Gu-m3d">
+                                <rect key="frame" x="329" y="181" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzV-4G-yJi">
+                                <rect key="frame" x="246" y="406" width="109" height="30"/>
+                                <state key="normal" title="Get my location">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getCurrentLocation:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="htj-2f-Gvz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="For adress" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coz-Wb-DK1">
+                                <rect key="frame" x="318" y="289" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="msv-Ws-4jn" secondAttribute="centerX" constant="-80" id="HzT-wE-nOT"/>
+                            <constraint firstAttribute="centerY" secondItem="msv-Ws-4jn" secondAttribute="centerY" constant="167.5" id="JvO-yN-KDx"/>
+                            <constraint firstAttribute="centerX" secondItem="ziU-J4-oLu" secondAttribute="centerX" constant="54.5" id="KS5-J3-iQL"/>
+                            <constraint firstAttribute="centerX" secondItem="PsO-Hl-EAB" secondAttribute="centerX" constant="59" id="S6D-Qm-uPP"/>
+                            <constraint firstAttribute="centerY" secondItem="bka-BQ-UHg" secondAttribute="centerY" constant="50.5" id="Wxd-iZ-aSH"/>
+                            <constraint firstAttribute="centerY" secondItem="PsO-Hl-EAB" secondAttribute="centerY" constant="167.5" id="bPM-PJ-xaO"/>
+                            <constraint firstAttribute="centerY" secondItem="v8w-Gu-m3d" secondAttribute="centerY" constant="108.5" id="hIx-fj-7tu"/>
+                            <constraint firstAttribute="centerX" secondItem="KzV-4G-yJi" secondAttribute="centerX" constant="-0.5" id="iO6-NW-97o"/>
+                            <constraint firstAttribute="centerX" secondItem="coz-Wb-DK1" secondAttribute="centerX" constant="-58.5" id="mMI-Ne-2Ob"/>
+                            <constraint firstAttribute="centerY" secondItem="KzV-4G-yJi" secondAttribute="centerY" constant="-121" id="nEI-eG-AVM"/>
+                            <constraint firstAttribute="centerX" secondItem="v8w-Gu-m3d" secondAttribute="centerX" constant="-90" id="p9l-nF-Fpx"/>
+                            <constraint firstAttribute="centerX" secondItem="bka-BQ-UHg" secondAttribute="centerX" constant="66.5" id="qCK-ll-Kkc"/>
+                            <constraint firstAttribute="centerY" secondItem="ziU-J4-oLu" secondAttribute="centerY" constant="108.5" id="qLw-MK-16h"/>
+                            <constraint firstAttribute="centerY" secondItem="coz-Wb-DK1" secondAttribute="centerY" constant="0.5" id="wMU-5V-QWm"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="coz-Wb-DK1" id="rEK-Wf-e54"/>
+                        <outlet property="latitudeLabel" destination="msv-Ws-4jn" id="BI7-7W-sbm"/>
+                        <outlet property="longitudeLabel" destination="v8w-Gu-m3d" id="gMD-me-wJp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

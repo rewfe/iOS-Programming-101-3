@@ -14,6 +14,7 @@
 		844102921B29065F0064EE7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844102911B29065F0064EE7B /* Images.xcassets */; };
 		844102951B29065F0064EE7B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844102931B29065F0064EE7B /* LaunchScreen.xib */; };
 		844102A11B29065F0064EE7B /* LocationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 844102A01B29065F0064EE7B /* LocationDemoTests.m */; };
+		844102AB1B2909660064EE7B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844102AA1B2909660064EE7B /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		8441029A1B29065F0064EE7B /* LocationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8441029F1B29065F0064EE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		844102A01B29065F0064EE7B /* LocationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationDemoTests.m; sourceTree = "<group>"; };
+		844102AA1B2909660064EE7B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844102AB1B2909660064EE7B /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		844102781B29065F0064EE7B = {
 			isa = PBXGroup;
 			children = (
+				844102AA1B2909660064EE7B /* CoreLocation.framework */,
 				844102831B29065F0064EE7B /* LocationDemo */,
 				8441029D1B29065F0064EE7B /* LocationDemoTests */,
 				844102821B29065F0064EE7B /* Products */,
